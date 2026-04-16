@@ -28,7 +28,7 @@ const pathName =[
                 <a className="btn btn-ghost text-xl">daisyUI</a>
             </div>
             <div className="">
-                <ul className=" flex justify-between items-center gap-3">
+                <ul className="flex space-x-1">
                     {
                         pathName.map((item, index) => <MyLink key={index} href={item.path}> {item.text}</MyLink>)
                     }

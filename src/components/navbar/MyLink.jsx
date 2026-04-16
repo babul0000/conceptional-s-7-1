@@ -9,13 +9,16 @@ const MyLink = ({href, children}) => {
     console.log(href);
     
     return (
-        <div className="">
-            <Link href={href}
-            
-            className={`pb-2 font-semibold ${pathName === href ? "t" : ""}`}>
+        <Link
+            href={href}
+            className={`text-lg font-bold px-3 py-1 rounded-md transition ${
+                pathName === href
+                    ? "text-green-500 bg-base-200"
+                    : ""
+            }`}
+        >
             {children}
-            </Link>
-        </div>
+        </Link>
     );
 };
 
