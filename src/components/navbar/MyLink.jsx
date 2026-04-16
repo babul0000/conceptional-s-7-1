@@ -1,19 +1,21 @@
-"use client";
+
+"use client"
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
 
-const MyLink = ({ href, children }) => {
-    const pathname = usePathname();
+
+const MyLink = ({href, children}) => {
+    const pathName = usePathname();
+    console.log(href);
     
-
     return (
-        <Link
-            href={href}
-            className={`pb-2 font-semibold ${pathname === href ? "border-b-2 border-purple-500" : ""}`}
-        >
+        <div className="">
+            <Link href={href}
+            
+            className={`pb-2 font-semibold ${pathName === href ? "t" : ""}`}>
             {children}
-        </Link>
+            </Link>
+        </div>
     );
 };
 
