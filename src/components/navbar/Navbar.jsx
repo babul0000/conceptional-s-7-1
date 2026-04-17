@@ -27,10 +27,11 @@ const pathName =[
             <div className="flex-1">
                 <a className="btn btn-ghost text-xl">daisyUI</a>
             </div>
+
             <div className="">
-                <ul className="flex space-x-1">
+                <ul className="flex justify-center items-center gap-4">
                     {
-                        pathName.map((item, index) => <MyLink key={index} href={item.path}> {item.text}</MyLink>)
+                        pathName.map((item, index) => (<MyLink key={index} href={item.path}> {item.text}</MyLink>))
                     }
                 </ul>
             </div>
