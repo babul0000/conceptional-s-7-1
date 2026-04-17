@@ -11,7 +11,7 @@ export const InstallAppContext = ({children}) => {
         fetch("/data.json")
         .then((res) => res.json())
         .then(data => setItem(data))
-        .catch((err) => console.error("Error loading data:", err));
+        // .catch((err) => console.error("Error loading data:", err));
 }, []);
     
     return (
